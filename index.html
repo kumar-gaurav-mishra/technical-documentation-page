@@ -89,8 +89,8 @@
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
                 code:</p>
             <code>
-                function greetMe(yourName) { alert("Hello " + yourName); } 
-                greetMe("World");
+                <p>function greetMe(yourName) { alert("Hello " + yourName); }</p>
+                <p>greetMe("World");</p>
             </code>
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
         </section>
@@ -112,18 +112,18 @@
             <p>You can declare a variable in three ways:</p>
             <p>With the keyword var. For example,</p>
             <code>
-                var x = 42.
+                <p>>var x = 42.</p>
             </code>
             <p>This syntax can be used to declare both local and global variables.</p>
             <p>By simply assigning it a value. For example,</p>
             <code>
-                x = 42.
+                <p>x = 42.</p>
             </code>
             <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this
                 variant.</p>
             <p>With the keyword let. For example,</p>
             <code>
-                let y = 13.
+                <p>let y = 13.</p>
             </code>
             <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </section>
@@ -138,11 +138,11 @@
                 following code will log 5, because the scope of x is the function (or global context) within which x is
                 declared, not the block, which in this case is an if statement.</p>
             <code>
-                if (true) { var x = 5; } console.log(x); // 5
+                <p>if (true) { var x = 5; } console.log(x); // 5</p>
             </code>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
             <code>
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
+                <p>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</p>
             </code>
         </section>
         <section id="Global_variables" class="main-section">
@@ -238,10 +238,14 @@
                 multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to
                 always use block
                 statements, especially when nesting if statements:</p>
-            <code>if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code>
+            <code><p>
+                if (condition) { 
+                    statement_1_runs_if_condition_is_true;
+                    statement_2_runs_if_condition_is_true;</p>
+                <p>} else {
+                    statement_3_runs_if_condition_is_false;
+                    statement_4_runs_if_condition_is_false; 
+                }</p></code>
             <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be
                 confused with
                 equality when glancing over the code. For example, do not use the following code:</p>
@@ -316,7 +320,7 @@
             </ul>
         </section>
     </div>
-    
+
 </body>
 
 </html>

@@ -60,7 +60,25 @@ p {
 }
 
 code {
+    height: 180px;
     background-color: #F7F7F7;
     margin: 40px;
-    padding: 20px;
+
+    word-wrap: break-word;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        position: unset;
+    }
+
+    #main-doc {
+        width: 100%;
+    }
 }
